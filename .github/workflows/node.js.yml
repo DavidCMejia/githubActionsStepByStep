@@ -12,10 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v4.2.2  
-    - name: Saludar
-      run: echo "Hola, vamos a resolver el escenario7"
-    - name: Cual es la fecha
-      run: echo "La fecha es $(date)"
-    - name: Mostrar el contenido de la carpeta
-      run: ls -la
+      uses: actions/checkout@v4.2.2
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 18
