@@ -5,7 +5,7 @@ describe('fizzbuzz', () => {
   // ! TEST Cubierto
   //   it("should be a function", () => {
   //     expect(typeof fizzbuzz).toBe("function");
-  //   });
+  //   }); hola
 
   it('should throw if not number is provided as parameter', () => {
     expect(() => fizzbuzz()).toThrow()
