@@ -10,6 +10,11 @@ on:
 jobs:
   escenario7:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4.2.2
